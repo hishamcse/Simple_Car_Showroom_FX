@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Viewer.RegSearchController"
+            prefHeight="240.0" prefWidth="500.0" stylesheets="@viewer.css" fx:id="dialog">
+    <content>
+        <GridPane alignment="TOP_CENTER" hgap="10" vgap="20">
+            <padding>
+                <Insets top="10"/>
+                <Insets bottom="10"/>
+                <Insets left="10"/>
+                <Insets right="10"/>
+            </padding>
+            <Text fx:id="title" text="Car Info to Search" GridPane.columnIndex="1" GridPane.columnSpan="1"
+                  GridPane.rowIndex="0" GridPane.rowSpan="1">
+            </Text>
+            <Label text="Car Registration No:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <TextField fx:id="reg" prefHeight="40" prefWidth="300" promptText="Enter Reg No"
+                       style="-fx-background-radius: 15" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <HBox spacing="20" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                <children>
+                    <Button fx:id="search" alignment="CENTER" prefWidth="70" text="Search"/>
+                </children>
+            </HBox>
+        </GridPane>
+    </content>
+</DialogPane>

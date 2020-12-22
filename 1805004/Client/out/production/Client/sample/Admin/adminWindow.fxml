@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.Admin.AdminWindowController"
+            prefHeight="400.0" prefWidth="550.0" stylesheets="@admin.css" fx:id="admin">
+    <headerText>
+        Admin Panel
+    </headerText>
+    <content>
+        <VBox spacing="10" fx:id="vbox" alignment="CENTER">
+            <Button textAlignment="CENTER" fx:id="create" text="Create Manufacturer" prefHeight="50"/>
+            <Button textAlignment="CENTER" fx:id="delete" text="Delete Manufacturer" prefHeight="50"/>
+        </VBox>
+    </content>
+</DialogPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<DialogPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.Admin.AdminLoginController"
+            prefHeight="400.0" prefWidth="550.0" fx:id="dialogPane" stylesheets="@admin.css"
+            style="-fx-background-color: #333333">
+    <headerText>
+        Admin Window
+    </headerText>
+    <content>
+        <GridPane alignment="CENTER" hgap="10" vgap="10">
+            <padding>
+                <Insets top="25"/>
+                <Insets bottom="25"/>
+                <Insets left="25"/>
+                <Insets right="25"/>
+            </padding>
+            <Text text="Admin User Info" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.rowSpan="1"
+                  GridPane.columnSpan="2" fx:id="welcome">
+            </Text>
+            <Label text="Admin Name:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField promptText="Enter the username" GridPane.rowIndex="1" GridPane.columnIndex="1" prefHeight="35"
+                       prefWidth="300" fx:id="textField" style="-fx-background-radius: 15"/>
+            <Label text="Password:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <PasswordField promptText="Enter Password" GridPane.rowIndex="2" GridPane.columnIndex="1" prefHeight="35"
+                           prefWidth="300" fx:id="passWord" style="-fx-background-radius: 15"/>
+            <HBox spacing="10" GridPane.rowIndex="4" GridPane.columnIndex="1">
+                <children>
+                    <Button text="Sign in" alignment="BOTTOM_RIGHT" style="-fx-background-radius: 15" fx:id="btn"/>
+                </children>
+            </HBox>
+            <Text GridPane.rowIndex="7" GridPane.columnIndex="1" fx:id="actionTarget"/>
+        </GridPane>
+    </content>
+</DialogPane>
